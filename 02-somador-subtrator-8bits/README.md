@@ -10,3 +10,6 @@ Variação do somador de 8 bits que também subtrai, com lógica de overflow e d
 
 ## Arquivo
 `somador_subtrator_8bits.sim1` (salvo no SimulIDE 1.1.0-SR1)
+
+---
+Feito por mim (Vittin019)

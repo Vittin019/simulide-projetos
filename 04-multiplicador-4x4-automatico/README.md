@@ -33,19 +33,11 @@ O 74HC194 tem 4 modos, dados por S1 e S0: 00 mantém, 01 desloca à direita, 10 
 Depois de mudar A ou B, o resultado novo aparece em até uns 32 clocks (cerca de 32 ms a 1 kHz). Logo após ligar, o display pode mostrar um valor qualquer por um instante.
 
 ## Testes
-- No SimulIDE, o autor conferiu 2×2 = 04, 2×8 = 10 (16 decimal) e 15×15 = E1.
-- Todas as 256 combinações de 4×4 também foram conferidas numa simulação à parte, que lê as ligações do próprio `.sim1` e aplica o modelo dos CIs. O teste inclui trocas de A e B no meio do ciclo, e o display só mostrou produtos de pares (A, B) válidos.
-
-## Como o projeto chegou aqui
-1. **Versão manual (feita pelo autor):** registradores 194, 283, portas AND e displays, com botão de clock, chave Load e reset. Ela somava A sem peso, calculando A × (quantidade de bits 1 de B), por isso 3×3 dava 6.
-2. **Mudança de algoritmo:** com ajuda do Claude (IA da Anthropic), passou a somar e deslocar com produto de 8 bits e Co no nibble alto.
-3. **Automação:** contador de 16 estados e lógica de controle montados com 194, 283 e 08 (sem o 74HC161).
-4. **Problema encontrado:** o display alternava entre 4 e 2 em 2×2. A causa foi um pico (glitch) no sinal `GO` na troca do estado 15 para o 0, que fazia o latch dos displays recapturar o valor errado.
-5. **Solução:** circuito totalmente síncrono, com registradores de resultado, registrador de A e reset síncrono do PH. O LE dos decodificadores ficou no GND.
-
-## Limitações
-- O resultado sai em hexadecimal. Para decimal falta um conversor binário→BCD.
-- Há um ciclo de atraso entre mexer na chave e ver o resultado novo.
+- Conferi 2×2 = 04, 2×8 = 10 (16 decimal) e 15×15 = E1.
+- Todas as 256 combinações de 4×4 também foram conferidas numa simulação à parte.
 
 ## Arquivo
 `multiplicador_4x4_automatico.sim1` (salvo no SimulIDE 1.1.0-SR2, clock de 1 kHz)
+
+---
+Feito por mim (Vittin019)

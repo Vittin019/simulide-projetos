@@ -9,3 +9,6 @@ Soma dois números de 8 bits (A e B) escolhidos por chaves e mostra o resultado 
 
 ## Arquivo
 `somador_8bits.sim1` (salvo no SimulIDE 1.0.0-SR1)
+
+---
+Feito por mim (Vittin019)

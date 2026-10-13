@@ -10,3 +10,6 @@ Contador decimal que usa um botão como clock e mostra dois dígitos nos display
 
 ## Arquivo
 `contador_bcd.sim1` (salvo no SimulIDE 1.1.0-SR1)
+
+---
+Feito por mim (Vittin019)
