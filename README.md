@@ -2,19 +2,17 @@
 
 Circuitos de lógica digital que fiz no SimulIDE pra matéria de eletrônica digital.
 
-### projetos
+| Pasta | Projeto |
+|-------|--------|
+| [`01-somador-8bits`](01-somador-8bits) | Somador de 8 bits |
+| [`02-somador-subtrator-8bits`](02-somador-subtrator-8bits) | Somador/subtrator de 8 bits |
+| [`03-contador-bcd`](03-contador-bcd) | Contador BCD de 2 dígitos |
+| [`04-multiplicador-4x4-automatico`](04-multiplicador-4x4-automatico) | Multiplicador sequencial 4×4 automático |
 
-- **01-somador-8bits** → somador de 8 bits com displays hex
-- **02-somador-subtrator-8bits** → somador/subtrator com detecção de overflow e sinal negativo
-- **03-contador-bcd** → contador decimal de 2 dígitos
-- **04-multiplicador-4x4-automatico** → multiplicador sequencial 4x4 automático (soma e desloca)
+### Como abrir
+1. Instala o SimulIDE (versão 1.x)
+2. Abre o arquivo `.sim1` da pasta
+3. Clica em iniciar simulação
 
-### como abrir
-
-1. Baixa o SimulIDE (versão 1.x)
-2. Abre o arquivo `.sim1` da pasta do projeto
-3. Clica em iniciar simulação e brinca com as chaves
-
-Os CIs usados são basicamente 74HC283, 74HC194, MC14495, CD4510, etc.
-
-O multiplicador automático deu um trabalho a mais. Começou manual e depois ficou com o ciclo automático.
+---
+Feito por mim (Vittin019)
