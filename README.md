@@ -1,23 +1,20 @@
-# Projetos de lógica digital no SimulIDE
+# simulide-projetos
 
-Circuitos de lógica digital montados no [SimulIDE](https://simulide.com/) para a disciplina de eletrônica digital: somadores, subtrator, contador e um multiplicador sequencial automático.
+Circuitos de lógica digital que fiz no SimulIDE pra matéria de eletrônica digital.
 
-## Projetos
+### projetos
 
-| Pasta | Projeto | CIs principais |
-|---|---|---|
-| [`01-somador-8bits`](01-somador-8bits) | Somador de 8 bits, entradas por chaves e resultado em hexadecimal | 74HC283 (×2), MC14495 (×7) |
-| [`02-somador-subtrator-8bits`](02-somador-subtrator-8bits) | Somador/subtrator de 8 bits com lógica de overflow e de sinal negativo | 74HC283 (×2), 74HC86 (×2), 74HC08, CD4511, MC14495 (×6) |
-| [`03-contador-bcd`](03-contador-bcd) | Contador decimal de dois dígitos, com botão de clock | CD4510 (×2), 74HC4511 (×2) |
-| [`04-multiplicador-4x4-automatico`](04-multiplicador-4x4-automatico) | Multiplicador sequencial 4×4 totalmente automático (soma e desloca) | 74HC194 (×6), 74HC283 (×4), 74HC08 (×3), MC14495 (×4) |
+- **01-somador-8bits** → somador de 8 bits com displays hex
+- **02-somador-subtrator-8bits** → somador/subtrator com detecção de overflow e sinal negativo
+- **03-contador-bcd** → contador decimal de 2 dígitos
+- **04-multiplicador-4x4-automatico** → multiplicador sequencial 4x4 automático (soma e desloca)
 
-## Como abrir
+### como abrir
 
-1. Instale o SimulIDE (os arquivos foram salvos nas versões 1.0 e 1.1 e devem abrir em versões 1.x).
-2. Menu **Arquivo → Abrir** e escolha o `.sim1` da pasta do projeto.
-3. Clique em **Iniciar simulação** e mude as chaves de entrada.
+1. Baixa o SimulIDE (versão 1.x)
+2. Abre o arquivo `.sim1` da pasta do projeto
+3. Clica em iniciar simulação e brinca com as chaves
 
-## Créditos e uso de IA
+Os CIs usados são basicamente 74HC283, 74HC194, MC14495, CD4510, etc.
 
-- Os créditos de cada circuito estão no próprio esquema (por exemplo, o somador de 8 bits traz o nome do autor numa caixa de texto).
-- O multiplicador do projeto 04 começou como um circuito manual montado pelo autor; a versão automática foi desenvolvida com ajuda do Claude (IA da Anthropic), que sugeriu o algoritmo de soma e deslocamento com produto de 8 bits e a lógica de controle. Os detalhes estão no README da pasta.
+O multiplicador automático deu um trabalho a mais. Começou manual e depois ficou com o ciclo automático.
